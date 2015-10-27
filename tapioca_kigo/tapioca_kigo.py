@@ -1,12 +1,13 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
+
+from __future__ import unicode_literals
+from __future__ import absolute_import
 
 from tapioca import (
     TapiocaAdapter, generate_wrapper_from_adapter, JSONAdapterMixin)
 
 from requests.auth import HTTPBasicAuth
-
-
-from resource_mapping import RESOURCE_MAPPING
+from .resource_mapping import RESOURCE_MAPPING
 
 
 class KigoClientAdapter(JSONAdapterMixin, TapiocaAdapter):
